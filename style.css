@@ -41,6 +41,12 @@ body {
   color: rgb(192, 69, 110);
 }
 
+/* Red Edition hehe*/
+a {
+  color: rgb(192, 69, 110);
+  text-decoration: none;
+}
+
 /* Simulate blue vertical margin line -- optional */
 .yellowpad-line::before {
   content: "";
