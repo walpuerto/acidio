@@ -1,0 +1,90 @@
+body {
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      #fff9c4,           /* Light yellow */
+      #fff9c4 36px,
+      #b3e0ff 36px,
+      #b3e0ff 38px,
+      #fff9c4 38px,
+      #fff9c4 56px
+    );
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Indie Flower', cursive, Arial, sans-serif;
+}
+
+.yellowpad-container {
+  max-width: 640px;
+  margin: 60px auto;
+  padding: 32px;
+  background: rgba(255, 255, 220, 0.0); /* transparent so the lines show */
+  /* Optional: simulate pad border */
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+}
+
+.yellowpad-line {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s cubic-bezier(.77,0,.18,1), transform 1s cubic-bezier(.77,0,.18,1);
+  font-size: 22px;
+  line-height: 56px; /* same as the background line spacing */
+  letter-spacing: .4px;
+  /* Optional: blue "margin" line at start of pad */
+  padding-left: 64px;
+  position: relative;
+}
+
+/* Red Edition hehe*/
+.yellowpad-line.is-red {
+  color: rgb(192, 69, 110);
+}
+
+/* Simulate blue vertical margin line -- optional */
+.yellowpad-line::before {
+  content: "";
+  position: absolute;
+  left: 44px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #b3e0ff;
+  border-radius: 10px;
+}
+
+.yellowpad-line.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.yellowpad-spacer {
+  height: 56px;
+}
+
+.postcard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 1.5px 0 #eee;
+  padding: 14px 14px 14px 14px;
+  margin: 28px auto;
+  max-width: 400px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.postcard img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 1.5px 9px rgba(0,0,0,0.04);
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+.postcard .caption {
+  color: #333;
+  font-size: 1.1em;
+  font-family: 'Indie Flower', cursive, Arial, sans-serif;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
