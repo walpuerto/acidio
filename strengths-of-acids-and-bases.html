@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acidio notes~</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Optional handwriting font for more realism -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="yellowpad-container">
+    <div class="yellowpad-line"><h1>Acid-Base Equilibria</h1></div>
+    <div class="yellowpad-line"><h2>Introduction</h2></div>
+    <div class="yellowpad-spacer" style="height: 26px"></div>
+    <div class="yellowpad-line">🤔 Before we delve deeper into the acid-base equilibria, let's discuss with a example!</div>
+    <div class="yellowpad-line"><br>🔥 Heartburn is a disorder, where <u>acid</u> rises from the stomach to the esophagus. The acid is neutralized by <u>basic</u> saliva, mediating the pain and damage.</div>
+    <div class="yellowpad-line"><br>🤔 In other words, acids and bases are <u>polar opposites</u>, and they like to destroy each other when they meet!</div>
+    <div class="yellowpad-line"><br>Well not exactly... 😅</div>
+    
+
+    <div class="postcard">
+      <img src="images/bocchi.jpg" alt="Bocchi in her bedroom staring into the cieling."/>
+      <div class="caption">What... do those underlined words mean?</div>
+    </div>
+    <div class="yellowpad-spacer" style="height: 20px"></div>
+
+    <div class="yellowpad-line"><h2>Definition</h2></div>
+    <div class="yellowpad-spacer" style="height: 28px"></div>
+    <div class="yellowpad-line">👨 <a href="https://en.wikipedia.org/wiki/Svante_Arrhenius"">Scante Arrhenius</a>, one of the pioneers of physical chemistry described acids and bases as the following:</div>
+    <div class="yellowpad-line"><br>✔️ Arrhenius <u>Acid</u>: When you add an acid into water, it breaks apart into H+ and a <a href="https://en.wikipedia.org/wiki/Ion#Common_ions">anion</a>.</div>
+    <div class="yellowpad-line"><br>✔️ Arrhenius <u>Base</u>: When you add a base into water, it breaks apart into OH- and a <a href="https://en.wikipedia.org/wiki/Ion#Common_ions">cation</a>.</div>
+    <div class="yellowpad-line"><br>💡 This is an interesting property of acids and base: that they <u>break apart in water</u>, this is called <u>dissosciation or ionization</u>!</div>
+  
+    <div class="postcard">
+      <img src="images/blood-shining.gif" alt="The blood scene from the Shining."/>
+      <div class="caption">Blood is basic, however, not all of its components release a free H+ into the system!</div>
+    </div>
+
+    <div class="yellowpad-line">👥 <a href="https://en.wikipedia.org/wiki/Johannes_Nicolaus_Br%C3%B8nsted">Brønsted</a> and <a href="https://en.wikipedia.org/wiki/Martin_Lowry">Lowry</a> realized that not all bases and acids release a H+ or OH- when they dissociate. So they made a more general version of the theory of Arrhenius:</div>
+    <div class="yellowpad-line"><br>💓 Brønsted-Lowry <u>Acid</u>: An acid is a proton donor.</div>
+    <div class="yellowpad-line"><br>💓 Brønsted-Lowry <u>Base</u>: A base is a proton reciever.</div>
+    <div class="yellowpad-line"><br>This is implies the existence of <u>secondary compounds</u> that recieve the protons of the acid and give protons to the base. These are called <u>conjugates</u>!</div>
+
+    <div class="postcard">
+      <img src="https://c.tenor.com/c9is7Aq9V0AAAAAd/tenor.gif" alt="March 7 achieveing eureka!"/>
+      <div class="caption">So an acid has a conjugate base, and a base has a conjugate acid!</div>
+    </div>
+    <div class="yellowpad-spacer" style="height: 34px"></div>
+    <div class="yellowpad-line"><h2>Examples:</h2></div>
+    
+    <div class="yellowpad-spacer" style="height: 30px"></div>
+    <div class="yellowpad-line">HCl is mixed into some water, and it dissociates into H+ and Cl-. Is it a base or an acid?</div>
+    <div class="yellowpad-line is-red"><br>According to the Arrhenius definition, this is an acid because it realeses H+ and an anion! 😄😃</div>
+    <div class="yellowpad-line"><br>Later on, the H+ in the water got absorbed by other water molecules, which formed H3O+. Is HCl still an acid, or is it a base?</div>
+    <div class="yellowpad-line is-red"><br>Yes, it still is! According to the Brønsted-Lowry definition, an acid is a proton donor! And the conjugate base in this scenario is H3O+! 😄🌟✊</div>
+    
+    <div class="postcard">
+      <img src="https://c.tenor.com/1Wi0B03o12MAAAAd/tenor.gif" alt="Makise Kurisu giving a thumbs-up!"/>
+      <div class="caption">Nice one gang! 😄</div>
+    </div>
+
+    <div class="yellowpad-spacer" style="height: 46px"></div>
+    <div class="yellowpad-line">✨ Something spectacular occurs naturally in water called autoionization!</div>
+    <div class="yellowpad-line"><br>Water breaks down into H+ and OH- randomly by itself! And the other water molecules absorb the H+ and OH- to form H3O+ and H2O2! Can you explain how water acts as a base and acid using the Arrhenius and Brønsted-Lowry definitions?</div>
+    <div class="yellowpad-line is-red"><br>According to the Arrhenius definition, water is both an acid and base because it releases both <b>H+</b> and <b>OH-</b>.</div>
+    <div class="yellowpad-line is-red"><br>According to the Brønsted-Lowry definition definition, water is both an acid and base because it can <b>donate a proton</b> and <b>recieve it too</b>.</div>
+  </div>
+
+  <script>
+    // Fade-in effect when lines are scrolled into view
+    const lines = document.querySelectorAll('.yellowpad-line');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Only animate once
+        }
+      });
+    }, { threshold: 0.2 });
+
+    lines.forEach(line => observer.observe(line));
+  </script>
+</body>
+</html>
